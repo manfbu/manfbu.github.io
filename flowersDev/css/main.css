@@ -238,3 +238,21 @@ button, input {
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 992px) {
+    .homepic {
+        display: none;
+    }
+    .works-title {
+        font-size: 52px;
+    }
+    .menu_item {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .works-title {
+        font-size: 30px;
+    }
+}
