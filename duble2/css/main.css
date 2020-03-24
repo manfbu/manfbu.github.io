@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+
+/* начало */
+.payments {
+    width: 34px;
+    height: 34px;
+}
+.nav {
+    margin-top: 30px;
+}
+
+.nav_login-button.btn {
+    font-family: Rubik;
+    font-size: 16px;
+    color: #4E5983;
+}
+
+.nav_reg-button.btn {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background: #A17FFF;
+    border-radius: 9px;
+    margin-left: 5px;
+}
+
+/* начало секции offer */
+
+.offer {
+    background: linear-gradient(157.1deg, #562EC2 29.59%, #A07EFE 73.59%);
+    margin-top: 30px;
+}
+
+.offer-title {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 110px;
+}
+
+.offer-description {
+    font-family: Rubik;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+}
+
+.paycart {
+    background: #FFFFFF;
+    opacity: 0.8;
+    border: 4px solid #F7F8FD;
+    border-radius: 26px;
+    display: flex;
+    margin-top: 55px;
+    margin-bottom: 85px;
+}
+
+.paycart_wrap {
+    margin-left: 100px;
+    margin-bottom: 75px;
+}
+
+.paycart-title {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4E5983;
+    margin-top: 78px;
+}
+
+.summe {
+    display: block;
+    font-family: Rubik;
+    font-size: 14px;
+    color: #4E5983;
+    opacity: 0.5;
+    margin-top: 45px;
+}
+
+.paycart-input {
+    border-right: 1px solid #CFD4DA; ;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    font-size: 20px;
+    width: 170px;
+    background: transparent;
+    outline: none;
+    color: #094067;
+}
+
+#money {
+    border-bottom: 2px solid #D6DCE2;;
+    border-radius: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 0em;
+    margin: 0;      
+}
+
+.payments {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+/* начало новой секции advantages */
+
+
+
+.advantages {
+    display: flex;
+}
+
+.advantage {
+    margin-top: 98px;
+    text-align: left;
+}
+
+.adv-title {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 22px;
+    color: #4E5983;
+}
+
+.adv-subtitle {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4E5983;
+    opacity: 0.7;
+}
+
+/* начало новой секции about */
+
+.about_wrap {
+    margin-top: 115px;
+    background: #FFFFFF;
+    border: 4px solid #F7F8FD;
+    border-radius: 26px;
+    display: flex;
+}
+
+.about-title {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 35px;
+    color: #160647;
+    padding-top: 100px;
+    padding-left: 5px;
+}
+
+.about-description {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4E5983;
+    opacity: 0.7;
+    padding-bottom: 88px;
+}
+
+.about-img {
+    padding-top: 100px;
+}
+
+/* начало новой секции reserv */
+
+.reserve {
+    background: linear-gradient(180deg, #EFF2FA 0%, rgba(255, 255, 255, 0) 96.57%);
+}
+
+.reserve-title {
+    text-align: center;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 35px;
+    color: #160647;
+    margin-top: 145px;
+}
+
+.media {
+    margin-top: 100px;
+}
+
+.mt-0 {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 16px;
+    color: #A4AABF;
+}
+
+.media-reserve {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 20px;
+    color: #160647;
+}
+
+.media-body {
+    text-align: left;
+    margin-left: 32px;
+}
+
+/* начало секции feedback */
+
+.fb-title {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 35px;
+    color: #160647;
+    margin-top: 160px;
+}
+
+.fb-comment {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4E5983;
+    opacity: 0.7;
+    margin-top: 115px;
+}
+
+.fb-comment_autor {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 20px;
+    color: #160647;
+    margin-top: 58px;
+}
+
+.fb-comment-publick_time {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 14px;
+    color: #838BA8;
+}
+
+/* начало новой секции start */
+
+.start-wrap {
+    background: linear-gradient(163.51deg, #562EC2 29.59%, #A07EFE 73.59%);
+    opacity: 0.8;
+    border-radius: 17px;
+    margin-top: 140px;
+}
+
+.start-title {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    padding-top: 80px;
+    padding-left: 130px;
+}
+
+.start-description {
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.7;
+    padding-left: 130px;
+}
+
+.start-button.btn {
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 25px 35px;
+    margin-left: 130px;
+    margin-bottom: 64px;
+    margin-top: 50px;
+}
+
+/* footer */
+
+.logo-footer {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#footer-soc {
+    font-size: 24px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+/* немного настроек адаптивности */
+
+@media screen and (max-width: 564px) {
+    .paycart {
+        flex-flow: column;
+    }
+
+    .offer-title {
+        font-size: 40px;
+    }
+
+    .reserve {
+        text-align: center;
+    }
+}
