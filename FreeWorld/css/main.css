@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+}
+
+.nav {
+    margin-top: 33px;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+#menu {
+    font-size: 26px;
+}
+#menu:hover {
+    color: #3498DB;
+    cursor: pointer;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498DB;
+    transition: 0.5s;
+    transform: translateX(100%);
+    z-index: 1;
+}
+.menu_active {
+    transform: translateX(0%);
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+.menu_list a {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu_list a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu {
+    position: absolute;
+    left: -35px;
+    top: 33px;
+}
+
+
+/* offer */
+
+.offer {
+    background: url('../img/home.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.offer-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 96px;
+    color: #fff;
+    line-height: 1.1;
+    margin-top: 190px;
+    margin-bottom: 170px;
+}
+
+/* about */
+
+.about-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+    margin-top: 120px;
+}
+
+.about-description {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    color: #979292;
+    margin-top: 50px;
+}
+
+/* travel section */
+
+.travel-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+    color: #000;
+    margin-top: 180px;
+}
+
+.blue {
+    color: #3498DB;
+}
+
+.tabs {
+    text-align: center;
+}
+
+.tab {
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 19px;
+    padding-left: 10px;
+    
+}
+.tab:hover {
+    text-decoration: none;
+    color: #3498DB;
+}
+
+.travel1 {
+    margin-top: 95px;
+}
+
+.travel2 {
+    margin-top: 95px;
+}
+
+.travel3 {
+    margin-top: 46px;
+}
+
+/* apartaments */
+
+.apartaments-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+    color: #000;
+    margin-top: 150px;
+}
+
+.apartament-slider .slide img {
+   margin: 0 auto;
+   margin-top: 100px;
+}
+
+.slick-active {
+    outline: none;
+}
+
+/* news */
+
+.news-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+    color: #000;
+    margin-top: 150px;
+}
+
+.new {
+    margin-top: 40px;
+}
+
+.new-content {
+    border: 1px solid #979292;
+}
+
+.cont-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* partners */
+
+.partner-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+    color: #000;
+    margin-top: 150px;
+}
+
+#partner {
+    font-size: 72px;
+    color: #3498DB;
+    padding-left: 145px;
+    margin-top: 110px;
+}
+
+#partner:first-child {
+    padding-left: 0;
+}
+
+/* mailing */
+
+.mailing {
+    background-color: #3498DB;
+    margin-top: 100px;
+}
+
+.mailing-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.mailing-input {
+    width: 306px;
+    height: 55px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    color: #979292;
+    padding-left: 9px;
+    margin-top: 40px;
+}
+
+.mailing-button.btn {
+    background-color: #fff;
+    color: #000;
+    height: 55px;
+    width: 160px;
+    border-radius: 0;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    margin-left: -50px;
+    margin-top: 40px;
+}
+
+.checkbox-text {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 38px;
+    margin-left: -70px;
+    margin-bottom: 40px;
+}
+
+#checkbox {
+    margin-top: 41px;
+}
+
+/* footer */
+
+.FooterLogo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .offer-title {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .offer-title {
+        font-size: 45px;
+    }
+}
