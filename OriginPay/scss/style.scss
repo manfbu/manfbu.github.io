@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+// colors
+
+$orange: #F0932B ;
+$dark_gray: #495766 ;
+$light_gray: #BDC3C7 ;
+
+//header 
+
+.nav_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.menu {
+    display: flex;
+    &_link {
+        list-style: none;
+    }
+    &_link a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 16px;
+        color: $light_gray;
+        &:hover {
+            color: $dark_gray;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+    }
+}
+
+.nav_button.btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background-color: $orange;
+    border-radius: 30px;
+    padding: 13px 40px;
+}
+
+#w_lang {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+    background-color: transparent;
+}
+
+.offer_wrap {
+    margin-top: 70px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.offer_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    color: $dark_gray;
+}
+
+
+.offer_button_one.btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 13px 60px;
+    border: 1px solid #F0932B;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-top: 35px;
+    
+}
+
+
+.offer_button.btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background-color:$orange;
+    border-radius: 30px;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 35px;
+    margin-left: 30px;
+    
+}
+
+.off_wrap {
+    display: flex;
+    justify-content: space-between;    
+    margin-top: 80px;
+}
+
+.media {
+    align-items: center;
+}
+
+
+.offer_off_title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark_gray;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+// intag
+
+.intag {
+    margin-top: 200px;
+}
+
+.intag_text_wrap {
+    margin-left: 30px;
+    margin-top: 220px;
+}
+
+.title.intag_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    color: $dark_gray;
+}
+
+.intag_desc {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark_gray;
+    margin-top: 45px;
+}
+
+.intag_button.btn {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background-color: $orange;
+    border-radius: 30px;
+    padding: 17px 35px;
+    margin-top: 70px;
+}
+
+//sec-cast
+
+.title.sec-cast_title {
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 49px;
+    color: $dark_gray;
+    margin-bottom: 68px;
+    margin-top: 160px;
+}
+
+
+.sec-cast_off_title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: $dark_gray;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.media.sec-cast_media {
+    margin-top: 40px;
+}
+
+.sec-cast_img {
+    margin-top: 215px;
+}
+
+//spend_bit
+
+.spend_bit_img {
+    margin-top: 150px;
+}
+
+.title.spend_bit_title {
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 49px;
+    color: $dark_gray;
+    margin-top: 180px;
+}
+
+.media_spend_bit_title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: $dark_gray;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.media_spend_bit_title_1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: $dark_gray;
+    margin-left: 30px;
+}
+
+.media.spend_bit {
+    margin-top: 43px;
+}
+
+// advantages
+
+.title.advantages_title {
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 49px;
+    text-align: center;
+    color: $dark_gray;
+    margin-top: 200px;
+}
+
+.advantages_wrap {
+    display: flex;
+}
+
+.advantage {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.advantage_title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark_gray;
+    margin-top: 18px;
+}
+
+.advantage_desc {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $dark_gray;
+}
+.adv_wrp {
+    display: flex;
+}
+
+// one-click
+
+.one-click_img {
+    margin-top: 170px;
+}
+
+.one-click_text_wrap {
+    margin-top: 230px;
+    text-align: right;
+}
+
+.title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 49px;
+    color: $dark_gray;
+}
+
+.one-click_desc {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark_gray;
+    margin-top: 30px;
+}
+
+.one-click_button.btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background-color:$orange;
+    border-radius: 30px;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+//go
+
+.go {
+    margin-top: 120px;
+}
+
+.go_wrap {
+    background-color: #fff;border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.go_wrap {
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+.title.go_title {
+    text-align: center;
+}
+
+.go_wrap-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    color: $dark_gray;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.go_wrap-desc {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: $dark_gray;
+    padding-left: 25px;
+}
+
+.go-wrap-link {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $orange;
+    padding-left: 25px;
+    &:hover {
+        text-decoration: none;
+        color: #D35400;
+        transition: 0.3s;
+    }
+}
+
+.parner_wrap {
+    background-color: #fff;border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
+.parner_title {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    color: $dark_gray;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+
+.partner_desc {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: $dark_gray;
+    padding-left: 25px;
+}
+
+
+.partner_button.btn {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background: linear-gradient(113.02deg, #D35400 0%, #F0932B 100%);
+    box-shadow: 0px 5px 20px rgba(85, 85, 85, 0.25);
+    border-radius: 5px;
+    border: none;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 16px 40px;
+    &:hover {
+        color: #fff;
+    }
+}
+
+//footer
+
+.footer {
+    background-color: $orange;
+}
+
+.footer_wrap {
+    display: flex;
+}
+
+.footer_logo {
+    margin-top: 25px;
+}
+
+.gh {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.gh.mail {
+    margin-top: 25px;
+}
+
+.gh.telegramm {
+    margin-top: 15px;
+}
+
+
+.products {
+    text-align: left;
+}
+
+.prod-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.prod-menu {
+    margin-top: 25px;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 30px;
+    &_list {
+        list-style: none;
+        margin-top: 16px;
+    }
+    &_list a {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.74);
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.cont {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.cont.locate {
+    margin-top: 25px;
+}
+
+.cont.telefone {
+    margin-top: 13px;
+}
+
+// settengs
+
+@media (max-width: 1200px) { 
+    .one-click_desc {
+        font-size: 15px;
+    }
+    .lang_style {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .one-click_img {
+        height: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .one-click_text_wrap {
+        margin-top: 20px;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+    }
+    .products {
+        text-align: right;
+    }
+    .off_wrap {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .advantages_wrap {
+        flex-direction: column;
+    }
+    .nav_button.btn {
+        display: none;
+    }
+}
