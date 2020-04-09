@@ -4,6 +4,8 @@
 
 [сайт](https://manfbu.github.io/OriginPay/ "")
 
+[сайт](https://manfbu.github.io/Stomotolog/ "")
+
 
 
 
