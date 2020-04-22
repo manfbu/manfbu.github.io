@@ -12,7 +12,7 @@
 
 <hr>
 
-[telegramm](t-do.ru/vlprog "тут телега")
+[telegramm](https://t-do.ru/vlprog "тут телега")
 
 [vk](https://vk.com/frontend24 "тут вк")
 
