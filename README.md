@@ -2,19 +2,25 @@
 
 <h1>Владимир Рогожин</h1>
 
-разрабочик сайтов, веб дизайнер
+разрабочик сайтов, веб-дизайнер
 
-[сайт](https://manfbu.github.io/duble2/ "!")
+[Moneyexchange](https://manfbu.github.io/duble2/ "!")
 
-[сайт](https://manfbu.github.io/OriginPay/ "!")
+[OriginPay](https://manfbu.github.io/OriginPay/ "!")
 
-[сайт](https://manfbu.github.io/Stomotolog/ "!")
+[Стоматология Delta](https://manfbu.github.io/Stomotolog/ "!")
 
 <hr>
 
 [telegramm](https://t-do.ru/vlprog "тут телега")
 
 [vk](https://vk.com/frontend24 "тут вк")
+
+<hr>
+
+<h6>Телефон</h6>
+
+<h2>8(929)858-86-52</h2>
 
 
 
