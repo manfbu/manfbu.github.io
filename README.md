@@ -4,13 +4,13 @@
 
 разрабочик сайтов, веб-дизайнер
 
-[Обменник](https://manfbu.github.io/duble3/ "!")
+[Обменник (Moneyexchange)](https://manfbu.github.io/duble3/ "!")
 
-[Интегратор криптовалют](https://manfbu.github.io/OriginPay/ "!")
+[Интегратор криптовалют (OriginPay)](https://manfbu.github.io/OriginPay/ "!")
 
 [Стоматология Delta](https://manfbu.github.io/Stomotolog/ "!")
 
-[Интернет мазазин](https://manfbu.github.io/Notify/ "!")
+[Интернет-магазин (Notify)](https://manfbu.github.io/Notify/ "!")
 
 
 
