@@ -1,0 +1,38 @@
+body {
+    color: #616161;
+}
+h2 {
+    padding: 10px;
+    margin: 20px 0;
+    background: #e7e6e6;
+}
+h2.blue {
+    border-left: #0778c7 10px groove;
+    color: #006fc0;
+}
+h2.pink {
+    border-left: #cb0098 10px groove;
+    color: #cb0098;
+}
+h2.green {
+    border-left: #32cbcb 10px groove;
+    color: #32cbcb;
+}
+.blue {
+    color: #006fc0;
+}
+.blue1 {
+    color: #00afef;
+}
+.blue2 {
+    color: #006fc0;
+}
+.pink {
+    color: #cb0098;
+}
+.green {
+    color: #32cbcb;
+}
+.red-text {
+	color: #ff0000;
+}
