@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container" id="app">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Авто на любой вкус</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="search-group">
+                    <label for="search">Выбери автомобиль</label>
+                    <input type="text" class="form-control" id="search" placeholder="Марка, модель" v-model="search">
+                </div><hr>
+
+                <div class="list-group">
+                    <li v-for='(car, index) in filteredCars' class="list-group-item list-group-item-action" @click="selectCar(index)" :class="{'active': selectedCarIndex === index}">{{car.name}} - {{car.model}}</li>
+                    
+                </div>
+            </div>
+
+            
+            <div class="col-md-8 text-right">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="name text-left">{{ car.name }}</h2>
+                        <img v-bind:src="car.image" v-bind:alt="car.name" class="rounded car-img">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Подробности</h2>
+
+                        <ul>
+                            <li>Модель - <strong>{{car.model}}</strong></li>
+                            <li>Год - <strong>{{car.year}}</strong></li>
+                            <li>Владелец - <strong>{{car.owner}}</strong></li>
+                        </ul>
+                        <div class="phoneBlock"> 
+                            <transition name="phone"> 
+                            <p class="tel" v-if="phoneVisibility">{{car.phone}}</p>
+                            </transition>
+                        </div>
+
+                        <button class="btn btn-primary" @click="modalVisibility = true">Купить</button>
+                        <button class="btn btn-success" @click="phoneVisibility = !phoneVisibility">{{ phoneBtnText }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade show" v-if="modalVisibility" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Хотитие купить этот {{car.name}} ?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="modalVisibility = false">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p><ul>
+                    <li>Модель - <strong>{{car.model}}</strong></li> <br>
+                    <li>Год - <strong>{{car.year}}</strong></li> <br>
+                    <li>Владелец - <strong>{{car.owner}}</strong></li>
+                </ul></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">купить</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" @click="modalVisibility = false">закрыть</button>
+                </div>
+              </div>
+            </div>
+ 
+        </div>
+          <div class="modal-backdrop fade show" v-if="modalVisibility"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
