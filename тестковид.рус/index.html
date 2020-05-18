@@ -7,6 +7,7 @@
     <title>Тестковид</title>
     <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="container mt-1 mb-1">
@@ -53,6 +54,45 @@
         </div>
     </div>
 </div>
+<section class="sale">
+    <div class="container">
+        <h2 class="blue">Предложение</h2><!--Термометр бесконтактный, инфрокрасный, электронный Aiqura AD-801-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="fotorama" data-nav="thumbs">
+                    <img src="IMG-20200518-WA0001.jpg">
+                    <img src="IMG-20200518-WA0002.jpg">
+                    <img src="IMG-20200518-WA0003.jpg">
+                    <img src="IMG-20200518-WA0004.jpg">
+                    <img src="IMG-20200518-WA0005.jpg">
+                    <img src="IMG-20200518-WA0006.jpg">
+                    <img src="IMG-20200518-WA0007.jpg">
+                    <img src="IMG-20200518-WA0008.jpg">
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="the-wrap">
+                    <h1 style="font-weight: 700; color: #006FC0;">Термометр бесконтактный, инфрокрасный, электронный Aiqura AD-801</h1>
+                    <ul class="advs">
+                        <li style="margin-top: 10px;">Тип: инфракрасный </li>
+                        <li style="margin-top: 10px;">Область применения: лобный</li>
+                        <li style="margin-top: 10px;">Температуры воздуха: --</li>
+                        <li style="margin-top: 10px;">Температуры жидкостей: --</li>
+                        <li style="margin-top: 10px;">Продолжительность измерения: 1 с</li>
+                        <li style="margin-top: 10px;">Диапазон измерения:
+                            35 – 42 °C / для измерения температуры поверхности от 0 °С до 100 °C /</li>
+                        <li style="margin-top: 10px;">Точность измерения: 0.2 °C</li>
+                        <li style="margin-top: 10px;">Память показаний: 16 шт</li>
+                        <button class="goeinfg">развернуть</button>
+                    </ul>
+                    <button style="padding: 12px 20px;font-size: 30px;font-weight: 700;cursor: pointer;border-left: 10px solid #0778C7;border: none;outline: none;padding-right: 90px;">5 837<span style="color: red;">*</span> руб</button>
+                    <button class="buy">купить</button>
+                    <p class="war"><strong>*</strong>цена розничная, оптовым покупателям скидки!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="video">
     <div class="container">
         <h2 class="blue">Как проводиться скрининг-тест</h2>
@@ -219,7 +259,51 @@
 		</div>
 	</div>
 </footer>
+
+<div class="popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <button class="popup-close">&times</button>
+            <h3 class="popup-header text-center">Все характеристики</h3>
+            <div class="popup-what">
+                <li style="margin-top: 10px;">Тип: инфракрасный </li>
+                <li style="margin-top: 10px;">Область применения: лобный</li>
+                <li style="margin-top: 10px;">Температуры воздуха: --</li>
+                <li style="margin-top: 10px;">Температуры жидкостей: --</li>
+                <li style="margin-top: 10px;">Продолжительность измерения: 1 с</li>
+                <li style="margin-top: 10px;">Диапазон измерения:
+                    35 – 42 °C / для измерения температуры поверхности от 0 °С до 100 °C /</li>
+                <li style="margin-top: 10px;">Точность измерения: 0.2 °C</li>
+                <li style="margin-top: 10px;">Память показаний: 16 шт</li>
+                <li style="margin-top: 10px;">Подсветка дисплея: --</li>
+                <li style="margin-top: 10px;">Габариты: 149x80x40 мм</li>
+                <li style="margin-top: 10px;">Вес: 90г</li>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.2.1.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script>
+        $(document).ready(function() {
+        $('.goeinfg').on('click',  function(event) {
+            event.preventDefault();
+            $('.popup').fadeIn( function() {
+                
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut( function() {
+                    
+                });
+            });
+        });
+    });
+</script>
 </body>
 </html>
