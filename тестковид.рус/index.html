@@ -56,7 +56,7 @@
 </div>
 <section class="sale">
     <div class="container">
-        <h2 class="blue">Предложение</h2><!--Термометр бесконтактный, инфрокрасный, электронный Aiqura AD-801-->
+        <h2 class="blue">Предложения</h2><!--Термометр бесконтактный, инфрокрасный, электронный Aiqura AD-801-->
         <div class="row">
             <div class="col-md-6">
                 <div class="fotorama" data-nav="thumbs">
@@ -85,10 +85,28 @@
                         <li style="margin-top: 10px;">Память показаний: 16 шт</li>
                         <button class="goeinfg">развернуть</button>
                     </ul>
-                    <button style="padding: 12px 20px;font-size: 30px;font-weight: 700;cursor: pointer;border-left: 10px solid #0778C7;border: none;outline: none;padding-right: 90px;">5 837<span style="color: red;">*</span> руб</button>
+                    <button style="padding: 12px 20px;font-size: 30px;font-weight: 700;cursor: pointer;border-left: 10px solid #076DB7;border: none;outline: none;padding-right: 90px;">5 837<span style="color: red;">*</span> руб</button>
                     <button class="buy">купить</button>
                     <p class="war"><strong>*</strong>цена розничная, оптовым покупателям скидки!</p>
                 </div>
+            </div>
+        </div>
+        <h2 class="blue"></h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="fotorama" data-nav="thumbs">
+                    <img src="IMG-20200520-WA0003.jpg">
+                    <img src="IMG-20200520-WA0002.jpg">
+                    <img src="IMG-20200520-WA0001.jpg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 style="font-weight: 700; color: #006FC0;">Маски медицинские нестерильные одноразовые</h1>
+                <button class="whatch">Смотреть видео!</button>
+                <h4 class="info">Заказ от 100 штук</h4>
+                <button style="padding: 12px 20px;font-size: 30px;font-weight: 700;cursor: pointer;border-left: 10px solid #076DB7;border: none;outline: none;padding-right: 90px;">от 15 руб</button>
+                <button class="buy">купить</button>
+
             </div>
         </div>
     </div>
@@ -282,6 +300,30 @@
         </div>
     </div>
 </div>
+<div class="pop-tel">
+    <div class="popup-dialog">
+        <div class="popup-content popup-content_tel">
+            <button class="popup-close popup-close_tel">&times</button>
+            <h3 class="popup-header">Телефон</h3>
+            <div class="popup-what">
+                <h2 class="tel"><a href="tel:+79160323864">
+                    +7-916-032-38-64</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="whatch-v">
+    <div class="popup-dialog">
+        <div class="whatch-content">
+            <button class="popup-close">&times</button>
+            <div class="popup-video">
+                <video src="video/VID-20200520-WA0004.mp4" controls width="350px" height="620px" class="wv"></video>
+                <video src="video/VID-20200520-WA0005.mp4" controls width="350px" height="620px" class="wv"></video>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.2.1.js"></script>
@@ -299,6 +341,30 @@
             $('.popup-close').on('click', function(event) {
                 event.preventDefault();
                 $('.popup').fadeOut( function() {
+                    
+                });
+            });
+        });
+        $('.buy').on('click',  function(event) {
+            event.preventDefault();
+            $('.pop-tel').fadeIn( function() {
+                
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.pop-tel').fadeOut( function() {
+                    
+                });
+            });
+        });
+        $('.whatch').on('click',  function(event) {
+            event.preventDefault();
+            $('.whatch-v').fadeIn( function() {
+                
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.whatch-v').fadeOut( function() {
                     
                 });
             });

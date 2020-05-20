@@ -107,3 +107,50 @@ h2.green {
 .war {
     font-size: 20px;
 }
+
+.whatch {
+    font-size: 24px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    background-color: #076DB7;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.popup-content_tel {
+    top: 25%;
+}
+
+.popup-close_tel {
+    padding-left: 0;
+}
+
+.pop-tel {
+    display: none;
+}
+
+.whatch-v {
+    display: none;
+}
+
+.whatch-content {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    flex-direction: column;
+    
+}
+
+.wv {
+    outline: none;
+}
+
+.info {
+    color: #000;
+    margin-top: 40px;
+}
