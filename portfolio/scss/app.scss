@@ -29,11 +29,13 @@
             transition: 0.2s;
             &:hover {
                 text-decoration: none;
-                color: #4A4646;
+                color: #464444;
             }
         }
     }
 }
+
+
 
 //portfolio
 
@@ -88,6 +90,17 @@
         }
     }
 
+}
+
+.tel {
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .ex_img.i {

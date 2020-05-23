@@ -42,7 +42,7 @@
 
 .menu__link a:hover {
   text-decoration: none;
-  color: #4A4646;
+  color: #464444;
 }
 
 .portfolio__title {
@@ -97,6 +97,17 @@
 
 .ex__btn:hover {
   background-color: #464444;
+}
+
+.tel {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+}
+
+.tel:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .ex_img.i {
