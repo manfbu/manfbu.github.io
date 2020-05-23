@@ -10,7 +10,11 @@
 
 [Стоматология Delta](https://manfbu.github.io/Stomotolog/ "!")
 
-[Интернет-магазин (Notify)](https://manfbu.github.io/Notify/ "!")
+[Интернет магазин Notify](https://manfbu.github.io/Notify/ "!")
+
+[приложение на vue](https://manfbu.github.io/vue-app/ "!")
+
+
 
 
 
