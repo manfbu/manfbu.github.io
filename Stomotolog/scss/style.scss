@@ -754,6 +754,18 @@ $gray: #7F8C8D;
 
 //adaptive 
 
+@media (max-width: 1200px) {
+    #video {
+        width: 400px;
+    }
+    .contact_tel {
+        font-size: 14px;
+    }
+    .contform_name_input.tel {
+        width: 290px;
+    }
+}
+
 @media (max-width: 992px) {
     .menu {
         display: none;
@@ -761,14 +773,29 @@ $gray: #7F8C8D;
     #contform_comment {
         width: 300px;
     }
-    .video_wrap {
-        
+
+    .contform_name_input.tel {
+        width: 200px;
     }
+    
     .contact_tel {
         font-size: 12px;
     }
-    .adv_wrap {
+    .media.adv-media.last {
+        display: none;
+    }
+    #cart {
+        display: none;
+    }
+    .vid.row {
+        display: flex;
         flex-direction: column;
+    }
+    #video {
+        width: 650px;
+    }
+    .cocoen {
+        height: 400px;
     }
 }
 
@@ -779,10 +806,33 @@ $gray: #7F8C8D;
     .media.feedback-o {
         flex-direction: column;
     }
+    #video {
+        width: 450px;
+    }
+    .contact_wrap {
+        margin-bottom: 30px;
+    }
+    .b-a_img {
+        height: 300px;
+    }
 }
 
-@media (max-width: 381px) {
-    .button.nav__button.btn {
+@media (max-width: 560px) {
+    .home_offer_img {
         display: none;
+    }
+    .adv_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 376px) {
+    .steps_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #video {
+        width: 300px;
     }
 }
