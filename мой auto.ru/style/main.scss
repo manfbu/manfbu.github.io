@@ -283,7 +283,9 @@ button, input, textarea {
         margin-top: 40px;
     }
 }
-
+.theonlywrap {
+    display: flex;
+}
 .price-on-do {
     display: flex;
     justify-content: space-between;
@@ -491,9 +493,6 @@ button, input, textarea {
     margin-top: 30px;
 }
 
-.thecontent-wrap {
-    display: flex;
-}
 
 .fotorama__img {
     width: 825px;
@@ -586,6 +585,8 @@ button, input, textarea {
     }
 }
 
+
+
  //адаптив
 
 @media (max-width: 431px) {
@@ -598,9 +599,18 @@ button, input, textarea {
     .offer__title {
         font-size: 18px;
     }
-    .thecontent-wrap {
-        display: flex;  
-        flex-direction: colomn;
+
+    .header-main__title {
+        font-size: 31px;
+    }
+    .header-main__price {
+        font-size: 31px;
+    }
+    .theonlywrap {
+        flex-direction: column;
+    }
+    .c-wrap {
+        margin-bottom: 20px;
     }
 }
 
@@ -634,13 +644,8 @@ button, input, textarea {
         display: flex;
         flex-direction: column;
     }
-    .c-wrap {
-        width: 200px;
-        height: 400px;
-    }
-    .fotorama__img {
-        
-    }
+    
+
     .p-wrap {
         display: none;
     }

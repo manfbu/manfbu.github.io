@@ -313,6 +313,12 @@ button, input, textarea {
   margin-top: 40px;
 }
 
+.theonlywrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .price-on-do {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,12 +553,6 @@ button, input, textarea {
   margin-top: 30px;
 }
 
-.thecontent-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .fotorama__img {
   width: 825px;
   height: 592px;
@@ -665,14 +665,20 @@ button, input, textarea {
   .offer__title {
     font-size: 18px;
   }
-  .thecontent-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .header-main__title {
+    font-size: 31px;
+  }
+  .header-main__price {
+    font-size: 31px;
+  }
+  .theonlywrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: colomn;
-            flex-direction: colomn;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .c-wrap {
+    margin-bottom: 20px;
   }
 }
 
@@ -712,10 +718,6 @@ button, input, textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .c-wrap {
-    width: 200px;
-    height: 400px;
   }
   .p-wrap {
     display: none;
