@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolead - концептуальный магазин автомобилей</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/cb63bf4c23.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+<body>
+    
+    
+        <header class="header">
+            <div class="nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="nav-wrap">
+                                
+    
+                                <a href="index.html" class="nav__logo"><img src="img/logo.svg" alt="autolead"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="offer-wrap">
+                                <div class="col-md-4">
+                                    <h1 class="offer__title">Все автомобили</h1>
+                                    <h4 class="offer__descr">всего 8 предложений</h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="offer__searchbox" placeholder="поиск" v-model="search">
+                                    <ul class="list">
+                                        <li class="list__item list-group-item-action">
+                                            <a href="kia_p.html">Kia Rio IV</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="audi_p.html">Audi Q7 II (4M)</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="volks_p.html">Volkswagen Touareg</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="mers_p.html">Mercedes S-Класс</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="bmw_p.html">BMW 3 серия</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="land_p.html">Land Rover Discovery</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="toyota_p.html">Toyota RAV4 V</a>
+                                        </li>
+                                        <li class="list__item list-group-item-action">
+                                            <a href="paycart.html">Hyundai Santa Fe IV</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="marks">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="marks__title">популярные марки</h6>
+                        <div class="marks-wrap">
+                            <a href="#">
+                                <img src="img/Volkswagen_logo.svg" alt="Volkswagen" class="mrk">
+                            </a>
+                            <a href="#">
+                                <img src="img/BMW.svg" alt="BMW" class="mrk">
+                            </a>
+                            <a href="#">
+                                <img src="img/kia.svg" alt="KIA" class="mrk">
+                            </a>
+                            <a href="#">
+                                <img src="img/Mercedes-Logo.svg" alt="Mercedes" class="mrk">
+                            </a>
+                            <a href="#">
+                                <img src="img/Lamborghini_Logo.svg" alt="Lamborghini" class="mrk">
+                            </a>
+                            <a href="#">
+                                <img src="img/Audi-Logo.svg" alt="Audi" class="mrk">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="calc">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="calc-wrap">
+                            <div class="col-md-7">
+                                <div id='id66' class="range">
+                                    <div id='id66b' class='range__between' style='width:100px;'></div>
+                                    <button id='id661' class="range__button_1" style='margin-left:0px;'></button>
+                                      <button id='id662' class="range__button_2" style='margin-left:100px;'></button>
+                                      <div class="rng_wrp">
+                                        <div class="min">
+                                            <h4 class="ruble">от</h4><input id='id66i1' class='range_inpt1' type='number' min='569900' max='10170600'><h4 class="ruble">₽</h4>
+                                        </div>
+                                        <div class="max">
+                                            <h4 class="ruble">до</h4><input id='id66i2' class='range_inpt2' type='number' min='569900' max='10170600'><h4 class="ruble">₽</h4>
+                                        </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-5">
+                                <button class="calc__btn">найденно ? предложений</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <section class="catalog">
+            <div class="container">
+                <div class="row">
+                    
+                        <div class="catalog-wrap">
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12" >
+                                <a href="kia_p.html">
+                                    <div class="card-car">
+                                        
+                                            <img src="img/kia_image.png" class="card__img">
+                                            
+                                        
+                                        <h6 class="card__info">без пробега</h6>
+        
+                                        <h4 class="card__title">Kia Rio IV</h4>
+                                        <strong class="card__price">569 900 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 push-md-6 col-sm-12">
+                                <a href="audi_p.html">
+                                    <div class="card-car">
+                                        <img src="img/audi_img.png" class="card__img">
+                                        <h6 class="card__info">без пробега</h6>
+        
+                                        <h4 class="card__title">Audi Q7 II (4M)</h4>
+                                        <strong class="card__price">4 805 000 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="volks_p.html">
+                                    <div class="card-car">
+                                        <img src="img/volkswagen_img.png" class="card__img">
+                                        <h6 class="card__info">без пробега</h6>
+        
+                                        <h4 class="card__title">Volkswagen Touareg</h4>
+                                        <strong class="card__price">6 365 300 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="mers_p.html">
+                                    <div class="card-car">
+                                        <img src="img/mercedes_img.png" class="card__img">
+                                        <h6 class="card__info">без пробега</h6>
+        
+                                        <h4 class="card__title">Mercedes S-Класс</h4>
+                                        <strong class="card__price">10 171 600 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    
+                
+                
+                    
+                        <div class="catalog-wrap">
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="bmw_p.html">
+                                    <div class="card-car">
+                                        <img src="img/bmw_img.png" class="card__img">
+                                        <h6 class="card__info">с пробегом</h6>
+        
+                                        <h4 class="card__title">BMW 3 серия</h4>
+                                        <strong class="card__price">1 800 000 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="land_p.html">
+                                    <div class="card-car">
+                                        <img src="img/land-rover_img.png" class="card__img">
+                                        <h6 class="card__info">с пробегом</h6>
+        
+                                        <h4 class="card__title">Land Rover Discovery</h4>
+                                        <strong class="card__price">3 800 000 ₽</strong>
+        
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="toyota_p.html">
+                                    <div class="card-car">
+                                        <img src="img/toyota/toyota__i.jpg" alt="" class="card__img">
+                                        
+                                        <h6 class="card__info">с пробегом</h6>
+            
+                                        <h4 class="card__title">Toyota RAV4 V</h4>
+                                        <strong class="card__price">1 577 000 ₽</strong>
+            
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-push-6 col-sm-12">
+                                <a href="paycart.html">
+                                    <div class="card-car">
+                                        <img src="img/hyindai_img.png" class="card__img">
+                                        <h6 class="card__info">с пробегом</h6>
+            
+                                        <h4 class="card__title">Hyundai Santa Fe IV</h4>
+                                        <strong class="card__price">1 884 000 ₽</strong>
+            
+                                        <hr>
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-wrap">
+                            <div class="footer__left">
+                                <img src="img/logo.svg" alt="footerlogo" class="footer__logo">
+                                <h4 class="footer__descr">
+                                    концептуальный <br>
+                                    магазин авто
+                                </h4>
+                            </div>
+                            <div class="footer__right">
+                                <a href="tel:+79298588652" class="footer__tel">+7(929)-858-86-52</a>
+                                <img src="img/name.svg" alt="name" class="footer__name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    
+    <script src="js/app.js"></script>
+    <!--<script src="js/mine.js"></script>-->
+    <!--<script src="js/filter.js"></script>-->
+</body>
+</html>
