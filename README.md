@@ -14,8 +14,7 @@
 
 [приложение на vue](https://manfbu.github.io/vue-app/ "!")
 
-
-
+[мой auto.ru](https://manfbu.github.io/%D0%BC%D0%BE%D0%B9%20auto.ru/ "!")
 
 
 <hr>
