@@ -817,6 +817,12 @@ $gray: #7F8C8D;
     }
 }
 
+.wr {
+    
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 @media (max-width: 560px) {
     .home_offer_img {
         display: none;
@@ -827,7 +833,7 @@ $gray: #7F8C8D;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 551px) {
     .steps_wrap {
         display: flex;
         flex-direction: column;
