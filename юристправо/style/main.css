@@ -1,0 +1,228 @@
+.nav {
+  padding: 10px 0;
+}
+
+.nav_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-top {
+  padding: 15px 0px;
+  background-color: #F8F8F8;
+}
+
+#icon {
+  margin-left: 10px;
+}
+
+.tel {
+  padding-left: 10px;
+  color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.tel:hover {
+  color: #3E3D3D;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_item {
+  list-style: none;
+}
+
+.menu_item a {
+  font-weight: 700;
+  padding-left: 25px;
+  color: #000;
+  font-size: 20px;
+}
+
+.active {
+  color: #007cd5;
+}
+
+.offer {
+  background-color: #000;
+}
+
+.offer_title {
+  color: #fff;
+  margin-top: 70px;
+  font-size: 55px;
+}
+
+.offer_descr {
+  color: #fff;
+  margin-top: 75px;
+}
+
+.offer_btn {
+  border: none;
+  text-align: center;
+  background-color: #007cd5;
+  padding: 15px;
+  border-radius: 55px;
+  font-size: 19px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.advs_title {
+  font-size: 30px;
+}
+
+.adv {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#adv_icon {
+  font-size: 45px;
+  color: #007cd5;
+}
+
+.claim {
+  background-color: #16222b;
+  margin-top: 60px;
+}
+
+.claim_title {
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.claim_adict {
+  color: #fff;
+  margin-left: 50px;
+}
+
+.claim_adict_first {
+  color: #fff;
+}
+
+.claim_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hand img {
+  width: 55px;
+  margin-left: 50px;
+}
+
+.feed_title {
+  text-align: center;
+  color: #000;
+  margin-top: 45px;
+}
+
+.feed_wrp {
+  margin-top: 30px;
+}
+
+.feed_owner {
+  color: #007cd5;
+}
+
+#str {
+  color: yellow;
+}
+
+.plan {
+  background-color: #F8F8F8;
+  margin-top: 100px;
+}
+
+.plm_body {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #aeaaea;
+  margin-bottom: 30px;
+}
+
+.plm_title {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.plm_price {
+  background-color: #007cd5;
+  color: #fff;
+  padding: 20px;
+}
+
+.plm_sales {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.punkt-menu {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: #16222b;
+}
+
+.footer-get_out {
+  color: #fff;
+}
+
+.get_zagavka {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.get_method {
+  margin-top: 20px;
+}
+
+@media (max-width: 376px) {
+  .menu {
+    display: none;
+  }
+  .offer_title {
+    font-size: 44px;
+  }
+  .claim_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
