@@ -16,6 +16,8 @@
 
 [мой auto.ru](https://manfbu.github.io/%D0%BC%D0%BE%D0%B9%20auto.ru/ "!")
 
+[юрист право](https://manfbu.github.io/юристправо/ "!")
+
 
 <hr>
 
