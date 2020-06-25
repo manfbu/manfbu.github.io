@@ -210,7 +210,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 731px) {
   .menu {
     display: none;
   }
@@ -223,6 +223,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+  .hand {
+    margin-left: 117px;
+  }
+  .claim_adict, .claim_adict_first {
+    margin-left: 140px;
+  }
+  .offer_btn {
+    margin-left: 120px;
   }
 }
 /*# sourceMappingURL=main.css.map */

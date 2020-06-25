@@ -219,7 +219,7 @@ $akcent: #007cd5;
     margin-top: 20px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 731px) {
     .menu {
         display: none;
     }
@@ -231,5 +231,17 @@ $akcent: #007cd5;
     .claim_wrap {
         flex-direction: column;
         text-align: center;
+    }
+
+    .hand {
+        margin-left: 117px;
+    }
+
+    .claim_adict , .claim_adict_first {
+        margin-left: 140px;
+    }
+
+    .offer_btn {
+        margin-left: 120px;
     }
 }
