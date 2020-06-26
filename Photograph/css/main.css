@@ -1,0 +1,187 @@
+.header_img {
+  position: absolute;
+  top: 0;
+  margin-top: -120px;
+}
+
+.nav_img1 {
+  margin-top: 12px;
+}
+
+.offer_content {
+  background-color: #F9F9F9;
+  padding: 160px 216px;
+  margin-top: 10px;
+}
+
+.offer_name {
+  font-size: 24px;
+  font-weight: 300;
+  width: 155px;
+}
+
+.offer_title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #000;
+}
+
+.offer_btn {
+  background-color: #BBDEFB;
+  border: none;
+  height: 53px;
+  width: 53px;
+  margin-top: 16px;
+  margin-bottom: 25px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.offer_btn:focus {
+  outline: none;
+}
+
+.offer_btn:hover {
+  background-color: #85C8FF;
+}
+
+.offer_img {
+  margin-top: 360px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 400px;
+}
+
+.menu_item {
+  list-style: none;
+  margin-right: 63px;
+}
+
+.menu_item a {
+  color: #000;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.menu_item a:hover {
+  color: #000;
+}
+
+.two {
+  margin-top: 12px;
+}
+
+.about_content {
+  background-color: #F9F9F9;
+  margin-top: 70px;
+  padding: 40px 17px;
+}
+
+.about_descr {
+  font-weight: 300;
+  font-size: 22px;
+  width: 363px;
+  color: #867979;
+}
+
+.about_title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.abt {
+  position: absolute;
+  bottom: 0;
+}
+
+.portfolio_content {
+  background-color: #F9F9F9;
+}
+
+.portfolio_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.portfolio_img {
+  margin-top: 70px;
+}
+
+.contact_title {
+  font-weight: 700;
+  margin-top: 57px;
+  font-size: 64px;
+}
+
+.label {
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 60px;
+}
+
+.cnt {
+  font-weight: 700;
+}
+
+#icon {
+  font-size: 34px;
+  color: #000;
+  margin-right: 30px;
+  margin-top: 16px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#icon:hover {
+  color: #6A6A6A;
+}
+
+@media (max-width: 1200px) {
+  .about_descr {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .two.header_img {
+    display: none;
+  }
+  .offer_img {
+    display: none;
+  }
+  .offer_content {
+    padding: 100px 20px;
+    margin-left: 40px;
+  }
+  .abt {
+    width: 150px;
+    height: 200px;
+  }
+  .cnt {
+    font-size: 24px;
+  }
+  .contact_title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer_title {
+    font-size: 56px;
+  }
+  .menu_item a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

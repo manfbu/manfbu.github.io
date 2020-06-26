@@ -1,0 +1,209 @@
+//colors
+
+$gray-l: #F9F9F9;
+$blue-l: #BBDEFB;
+
+//header
+
+.header {
+    &_img {
+        position: absolute;
+        top: 0;
+        margin-top: -120px;
+    }
+}
+
+.nav {
+    &_img1 {
+       
+        margin-top: 12px;
+    }
+}
+
+.offer {
+    &_content {
+        background-color: $gray-l;
+        padding: 160px 216px;
+        margin-top: 10px;
+    }
+    &_name {
+        font-size: 24px;
+        font-weight: 300;
+        width: 155px;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 64px;
+        color: #000;
+    }
+    &_btn {
+        background-color: $blue-l;
+        border: none;
+        height: 53px;
+        width: 53px;
+        margin-top: 16px;
+        margin-bottom: 25px;
+        transition: .2s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: #85C8FF;
+        }
+    }
+    &_img {
+        margin-top: 360px;
+    }
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    width: 400px;
+    &_item {
+        list-style: none;
+        margin-right: 63px;
+
+        & a {
+            color: #000;
+            font-weight: 300;
+            font-size: 18px;
+
+            &:hover {
+                
+                color: #000;
+            }
+        }
+    }
+}
+.two {
+    margin-top: 12px;
+}
+
+//about 
+
+.about {
+    &_content {
+        background-color: $gray-l;
+        margin-top: 70px;
+        padding: 40px 17px;
+    }
+    &_descr {
+        font-weight: 300;
+        font-size: 22px;
+        width: 363px;
+        color: #867979;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 36px;
+    }
+}
+
+.abt {
+    position: absolute;
+    bottom: 0;
+}
+
+
+//portfolio
+
+.portfolio {
+    &_content {
+        background-color: $gray-l;
+    }
+
+    &_title {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &_img {
+        margin-top: 70px;
+    }
+}
+
+//contact
+
+.contact {
+    &_title {
+        font-weight: 700;
+        margin-top: 57px;
+        font-size: 64px;
+    }
+}
+
+.label {
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.cnt {
+    font-weight: 700;
+}
+
+#icon {
+    font-size: 34px;
+    color: #000;
+    margin-right: 30px;
+    margin-top: 16px;
+    transition: .2s;
+
+    &:hover {
+        color: #6A6A6A;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .about_descr {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .two.header_img {
+        display: none;
+    }
+
+    .offer_img {
+        display: none;
+    }
+
+    .offer_content {
+        padding: 100px 20px;
+        margin-left: 40px;
+    }
+
+    .abt {
+        width: 150px;
+        height: 200px;
+    }
+
+    .cnt {
+        font-size: 24px;
+    }
+
+    .contact_title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_img {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .offer_title {
+        font-size: 56px;
+    }
+
+    .menu_item a {
+        font-size: 18px;
+    }
+}
