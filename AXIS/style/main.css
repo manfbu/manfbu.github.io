@@ -91,10 +91,6 @@ body {
   transition: .2s;
 }
 
-.tamplate:hover {
-  margin-top: -1px;
-}
-
 .buy_wrap {
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
