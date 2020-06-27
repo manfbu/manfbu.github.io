@@ -63,6 +63,9 @@
   transition: .2s;
   margin-top: 12px;
 }
+.offer_btn:focus {
+  outline: none;
+}
 
 .offer_btn:hover {
   background-color: #C73FFE;
@@ -232,6 +235,9 @@
   -webkit-transition: .2s;
   transition: .2s;
   background-color: transparent;
+}
+.plan_btn:focus {
+  outline: none;
 }
 
 .plan_btn:hover {
