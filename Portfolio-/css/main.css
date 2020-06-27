@@ -275,6 +275,10 @@
   padding-bottom: 16px;
 }
 
+.portfolio_link:hover {
+  text-decoration: none;
+}
+
 .pricing_title {
   font-size: 36px;
   font-weight: 700;
