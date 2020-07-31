@@ -1,0 +1,143 @@
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0px;
+}
+.header {
+    box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.07);
+}
+
+.header-button.btn.btn-primary {
+    background-color: #3440A8;
+    border: none;
+    
+}
+
+.cross {
+    position: relative;
+    display: block;
+    height: 10px;
+    width: 15px;
+    float: right;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.cross:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    top: 0;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.cross:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    bottom: 9;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+
+.warning.closed {
+    display: none;
+}
+
+.header-button.btn.btn-primary:hover {
+    background-color: #28338C;
+}
+
+.warning {
+    background: linear-gradient(180deg, #28338C 0%, #3440A8 100%);
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s ease;
+}
+.links {
+    padding-left: 10px;
+}
+
+.links_block {
+    border: 1px solid #F5F3F3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+.links_item {
+    list-style: none;
+}
+.links_item a {
+    color: #979191;
+    transition: .2s ;
+}
+.links_item a:hover {
+    color: #706C6C;
+    text-decoration: none;
+}
+
+.sitebar {
+    position: fixed;
+}
+
+.content-area {
+    margin-top: 30px;
+}
+.content-title:hover:after {
+    content: '#';
+    display: inline-block;
+    color: #96A1FF;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+.content-image {
+    width: 100%;
+}
+.logo img {
+    transition: .2s;
+}
+.logo img:hover {
+    opacity: 0.6;
+}
+pre {
+    font-size: 16px !important;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+.content-title {
+    margin-top: 50px;
+    color: #000;
+}
+.m {
+    margin-top: 0px;
+}
+.f {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content-overview {
+    font-weight: 400;
+}
+.descr {
+    font-size: 18px;
+}
+
+.content-list {
+    padding: 15px;
+}
+.code {
+    font-size: 18px;
+}
+.content_item {
+    margin-top: 45px;
+}
+
+.list-group-item {
+    font-size: 18px;
+}

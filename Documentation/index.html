@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - TASTY | OTOIDOCS</title>
+    <link rel="stylesheet" href="SRC/style/main.css">
+    <link rel="stylesheet" href="SRC/style/bootstrap.min.css">
+    <link rel="shortcut icon" href="SRC/images/favicon.ico" type="image/png">
+    <script src="https://kit.fontawesome.com/cb63bf4c23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header_wrap">
+                <a href="#" class="logo">
+                    <img src="SRC/images/OTOIDOCS.svg" alt="OTOIDOCS">
+                </a>
+
+                <a href="#" class="button_link">
+                    <button class="header-button btn btn-primary">Get support</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="warning">
+        <div class="container">
+            <div class="cross"></div>
+
+            <h3 class="warning_text">Please note that “Tasty” is not WordPress theme</h3>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="sitebar col-xl-3">
+                    <div class="links_block">
+                        <div class="link_wrp">
+                            <h5 class="link_title">Getting Started</h5>
+
+                            <ul class="links">
+                                <li class="links_item"><a href="#fs">File Structure</a></li>
+                                <li class="links_item"><a href="#demo-structure">Project structure</a></li>
+                            </ul>
+                        </div>
+                        <div class="link_wrp">
+                            <h5 class="link_title">Edit template</h5>
+
+                            <ul class="links">
+                                <li class="links_item"><a href="#ei">Edit images</a></li>
+                                <li class="links_item"><a href="#et">Edit text</a></li>
+                                <li class="links_item f"><a href="#crf">Customizing reservation form</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-area col-xl-9">
+                    <h2 class="content-title m" id="fs">File structure</h2>
+
+                    <p class="content-descr">After payment, you receive a zip archive, unpack it into a folder, you will see this file structure:</p>
+
+                    <pre>
+                        <code class="content-code">
+    Tasty/ 
+    ├── Source/ //In this folder contains folders with sites
+    │   ├── Demo1/
+    │   ├── Demo1 - multipage/
+    │   ├── Demo2/
+    │   └── Demo2 - multipage/
+    |
+    └── Documentation/
+        ├── SRC/
+        └── index.html
+                        </code>
+                    </pre>
+
+                    <hr>
+
+                    <h2 class="content-title" id="demo-structure"><code>Demo</code> folder structure</h2>
+
+                    <p class="content-descr"></p>
+
+                    <figure class="hightlight">
+                        <pre>
+                            <code class="content-code">
+    Demo1/ 
+    ├── css/
+        ├── bootstrap.min.cs
+        ├── main.css 
+        └── main.css.map
+    
+    ├── images/
+        ├── avatars/    //this folder contains avatars used in testimonial slider
+        ├── bg/         //background images
+        ├── footer-instagram-images/
+        ├── gallery/    //gallery images
+        ├── icons/
+        ├── logos/
+        ├── menu/
+        └── video_preview.png
+    
+    ├── js/
+        └── index.js
+    
+    ├── libs/
+        ├── animate/
+        ├── datapicker/
+        ├── Magnific Popup/
+        ├── paralax/
+        └── slick/
+                                    
+    ├── phpmailer/
+    
+    ├── scss/
+        ├── _adaptive.scss 
+        ├── _fonts.scss 
+        ├── _settings.scss 
+        └── main.scss 
+    
+    ├── error.html
+    ├── index.html
+    ├── mail.php
+    └── thank-you.html
+                            </code>
+                        </pre>
+                    </figure>
+
+                    <hr>
+
+                    <h1 class="content-title" id="ch">Edit template</h1>
+                    <h4 class="content-overview">In this section, I tried to describe in detail how to set up a template for your restaurant if you are not familiar or cannot work with the code.</h4>
+
+                    <hr>
+
+                    <h2 class="content-title" id="ei">How to edit images</h2>
+
+                    <div class="alert alert-warning" role="alert">
+                        Template not include images which you see in demo!
+                    </div>
+
+                    <ul class="content-list">
+                        <li class="content_item"><p class="content-descr descr">
+                            <strong>To change the background images</strong>, you need to go to the <code>images</code> folder and the <code>bg</code> subfolder, upload your images there, which you will use as the background <br>
+                            <p></p>
+                            <p class="content-descr descr">
+                                Now go to <code>css</code> folder and open <code>main.css</code> file, find the following sections: <br>
+
+
+                                <p></p>
+                                <code class="code">header</code> <br>
+                                <code class="code">oh</code> <br>
+                                <code class="code">gallery-header</code> <br>
+                                <code class="code">rv-header</code> <br>
+                                <code class="code">review</code> <br>
+                                <p></p>
+                                <p class="descr">
+                                    Find the <code>background-image</code> selector in these sections and change the URL to the path to your image. <br>
+                                example: <br>
+                                <code>background-image: url('../images/bg/image.png');</code>
+                                </p>
+                            </p>
+                        </p></li>
+
+                        <li class="content_item">
+                            <p class="content-descr descr">
+                                <strong>To change the dishes images in the menu section</strong>, also go to the <code>images</code> folder and upload the photos of the dishes to the <code>menu</code> subfolder. <br>
+                                <p></p>
+                                <p class="descr"> Now open your <code>index.html</code>  file and find the following code blocks: <br></p>
+                            </p>
+
+                            <pre>
+                                <code>
+    &lt;div class="col-xl-4 col-md-6"&gt;
+        &lt;div class="menu_item animated fadeIn"&gt;
+                    
+            &lt;div class="menu-image_container"&gt;
+                &lt;div class="menu-image_wrapper"&gt;
+                    &lt;div class="menu_image" style="background-image: url('images/menu/menu_image1.jpg');"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                    
+            &lt;div class="content"&gt;
+                &lt;h4 class="menu-content_title"&gt;Pizza&lt;/h4&gt;
+                &lt;span class="overlay"&gt;&lt;/span&gt;
+                &lt;h4 class="menu-content_price"&gt;$25&lt;/h4&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                As above, change the URL in the <code>backgroung-image</code> property to the path to your image.
+                            </p>
+                        </li>
+                        <li class="content_item">
+                            <p class="content-descr descr">
+                                <strong>To change the images in the gallery</strong>, go to the <code>images</code> folder and the <code>gallery</code> subfolder and upload your images there.
+                                <p></p>
+                                <p class="descr">Now open your <code>index.html</code> file and find the following code blocks: (there are 4 of them)</p>
+                            </p>
+
+                            <pre>
+                                <code>
+    &lt;div class="gallery_item col-xl-7"&gt;
+        &lt;div class="padding_wrap one"&gt;
+            &lt;a class="gallery_image" href="images/gallery/gallery_image1.jpg" style="height: 350px;"&gt;
+                &lt;img src="images/gallery/gallery_image1.jpg" alt="Reload page!" width="635px" height="350px"&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                In each of the blocks in the <code>href</code> and <code>src</code> attributes specify the paths to your images.
+                            </p>
+                        </li>
+                        <li class="content_item">
+                            <p class="content-descr descr">
+                                <strong>To change a person's avatar in the reviews slider</strong>, go to the <code>images</code> folder and the <code>avatar</code> subfolder and upload images there (if they are not there, just leave it as it is).
+                                <p></p>
+                                <p class="descr">
+                                    Now open <code>index.html</code> file and find the following code blocks:
+                                </p>
+                            </p>
+
+                            <pre>
+                                <code>
+    &lt;div class="col-xl-4"&gt;
+        &lt;div class="review_wrap"&gt;
+            &lt;img src="images/avatars/avatar.png" alt="Reload Page!" class="review_avatar"&gt;
+                        
+                &lt;h5 class="review_title">John Doe&lt;/h5>
+                        
+                &lt;div class="stars"&gt;
+                    &lt;i class="fas fa-star" id="star"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-star" id="star"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-star" id="star"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-star" id="star"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-star" id="star"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                        
+                &lt;h6 class="review_text"&gt;
+                    Lorem ipsum dolor sit &lt;br&gt;
+                    amet, consectetur &lt;br&gt;
+                    adipiscing elit. Nam &lt;br&gt;
+                    egestas elit a mi lacinia &lt;br&gt;
+                    posuere. Fusce rhoncus 
+                &lt;/h6&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                This is the code of the recall block, find the <code>img</code> tag and the <code>scr</code> attribute there, change the URL to the path to your image.
+                            </p>
+                        </li>
+                        <li class="content_item">
+                            <p class="content-descr descr">
+                                <strong>To change Instagram photos in footer</strong>, go to <code>images</code> folder and subfolder <code>footer-instagram-images</code> and upload photos there.
+                                <p></p>
+                                <p class="descr">
+                                    Now open <code>index.html</code> file and find the following code blocks:
+                                </p>
+                            </p>
+
+                            <pre>
+                                <code>
+    &lt;div class="insta_photo-content"&gt;
+        &lt;div class="insta_photo"&gt;
+            &lt;img src="images/footer-instagram-images/insta_img1.jpg" alt="Reload page!"&gt;
+        &lt;/div&gt;
+                
+        &lt;div class="insta_photo"&gt;
+            &lt;img src="images/footer-instagram-images/insta_img2.jpg" alt="Reload page!"&gt;
+        &lt;/div&gt;
+                
+        &lt;div class="insta_photo"&gt;
+            &lt;img src="images/footer-instagram-images/insta_img3.jpg" alt="Reload page!"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                Find the <code>img</code> tag and the <code>scr</code> attribute there, change the URL to the paths to your images.
+                            </p>
+                        </li>
+                        <li class="content_item">
+                            <p class="content-descr descr">
+                                <strong>To change the logo</strong>, go to the <code>images</code> folder and the <code>logos</code> subfolder and upload the logos named <code>logo.svg</code> and <code>footer_logo.svg</code> there.
+                                <div class="alert alert-warning" role="alert">
+                                    If your logo is in another format like PNG or JPG, <a href="https://image.online-convert.com/convert-to-svg">use an online converter</a>.
+                                </div>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h2 class="content-title" id="et">How to edit text</h2>
+                    <p class="descr">All texts you can change in <code>index.html</code> file.</p>
+
+                    <h2 class="content-title" id="crf">Customizing reservation form</h2>
+                    <h4 class="content-overview">
+                        In order for the booking form to work, you need 2 email accounts! <br />
+                        One account submits the application, and the other receives.
+                    </h4>
+
+                    <div class="alert alert-warning" role="alert">
+                        Attention! This form only works on hosting or local server.
+                    </div>
+
+                    <ul class="content-list">
+                        <li class="content-item">
+                            <p class="content-descr descr">
+                                Open <code>mail.php</code> file.
+                                <p></p>
+                                <p class="descr">
+                                    You will see the this:
+                                </p>
+                            </p>
+                            <pre>
+                                <code>
+    &lt;?php 
+
+    require_once('phpmailer/PHPMailerAutoload.php');
+    $mail = new PHPMailer;
+    $mail->CharSet = 'utf-8';
+                                    
+    $time = $_POST['time'];
+    $datepicker = $_POST['datepicker'];
+    $persons = $_POST['persons'];
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $regard = $_POST['regard'];
+                                    
+    //$mail->SMTPDebug = 3;                         // Enable verbose debug output
+                                    
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'youmail@mail.com'; // Your login from the email from which letters will be sent
+    $mail->Password = 'password'; // Your password from the email from which letters will be sent
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465; // TCP port to connect to / this port may be different from other providers
+                                    
+    $mail->setFrom('youmail@mail.com'); // From whom will the letter go?
+    $mail->addAddress('mail@domain.ru');     // Who will receive the letter?
+    //$mail->addAddress('ellen@example.com');               // Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    $mail->isHTML(true);                                  // Set email format to HTML
+                                    
+    $mail->Subject = 'NEW RESERVATION REQUEST';
+    $mail->Body    = 'time: ' .$time. '&lt;br&gt;date: ' .$datepicker. '&lt;br&gt;persons: ' .$persons. '&lt;br&gt;name: ' .$name. '&lt;br&gt;phone: ' .$phone. '&lt;br&gt;regard: ' .$regard;
+    $mail->AltBody = '';
+                                    
+    if(!$mail->send()) {
+        header('location: error.html');
+    } else {
+        header('location: thank-you.html');
+    }
+    ?&gt;                                
+                                </code>
+                            </pre>
+
+                            <p class="descr">We will only work with this part of the code:</p>
+
+                            <pre>
+                                <code>
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;       // Enable SMTP authentication
+    $mail->Username = 'youmail@mail.com'; // Your login from the email from which letters will be sent
+    $mail->Password = 'password'; // Your password from the email from which letters will be sent
+    $mail->SMTPSecure = 'ssl';    // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465; // TCP port to connect to / this port may be different from other providers
+                                    
+    $mail->setFrom('youmail@mail.com'); // From whom will the letter go?
+    $mail->addAddress('mail@domain.ru');     // Who will receive the letter?                                
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                Enter the SMTP of your mail from which letters will be sent (the list of SMTP for different mailboxes is given below).
+                            </p>
+
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Gmail:  <strong>smtp.gmail.com</strong></li>
+                                        <li class="list-group-item">Yahoo:  <strong>smtp.mail.yahoo.com</strong></li>
+                                        <li class="list-group-item">Aol:  <strong>smtp.aol.com</strong></li>
+                                        <li class="list-group-item">iCloud:  <strong>smtp.mail.me.com</strong></li>
+                                        <li class="list-group-item">Mail.ru:  <strong>smtp.mail.ru</strong></li>
+                                        <li class="list-group-item">Yandex.Mail:  <strong>smtp.yandex.ru</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">port:  <strong>465</strong></li>
+                                        <li class="list-group-item">port:  <strong>465 or 587</strong></li>
+                                        <li class="list-group-item">port:  <strong>587</strong></li>
+                                        <li class="list-group-item">port:  <strong>587</strong></li>
+                                        <li class="list-group-item">port:  <strong>465</strong></li>
+                                        <li class="list-group-item">port:  <strong>465</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p class="descr" style="margin-top: 30px;">
+                                Now enter your mail SMTP here: (I have mail.ru for example)
+                            </p>
+                            <pre>
+
+    <code>$mail->Host = 'smtp.mail.ru';</code>
+                            </pre>
+
+                            <p class="descr">
+                                Now we need to specify the login and password of the mail from which messages will be sent:
+                            </p>
+
+                            <pre>
+                                <code>
+    $mail->Username = 'youmail@mail.com'; // Your login from the email from which letters will be sent
+    $mail->Password = 'password'; // Your password from the email from which letters will be sent
+                                </code>
+                            </pre>
+
+                            <p class="descr">
+                                The next step we need to specify the port, the list of ports for each mailbox is given above
+                            </p>
+                            <pre>
+
+    <code>$mail->Port = 465; // TCP port to connect to / this port may be different from other providers</code>
+                            </pre>
+                            <p class="descr">
+                                I have port 465.
+                            </p>
+
+                            <div class="descr">
+                                Now enter the mail from which letters will be sent (we entered it above) and the mail to which letters will come (enter the main mail)
+                            </div>
+
+                            <pre>
+                                <code>
+    $mail->setFrom('youmail@mail.com'); // From whom will the letter go?
+    $mail->addAddress('mail@domain.ru');     // Who will receive the letter?     
+                                </code>
+                            </pre>
+
+                            <h4 class="content-descr descr">
+                                Now download it all to your hosting or local computer and check it out!
+                            </h4>
+
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="SRC/js/scr.js"></script>
+
+</body>
+</html>
